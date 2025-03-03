@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📖</span> <strong>Playbook</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">0</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2>⚡ Actividad 0: Revisión de Misión</h2>
+                <p>Asegurar que el profesor tenga todos los materiales y recursos listos para la clase, sin interrupciones.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Revisión de Misión</h3>
+                            <p>Proyectar diapositiva 1: "REVISIÓN DE MISIÓN" y verificar que se tenga: - Conexión a internet estable. - Acceso a MakeCode (https://makecode.microbit.org/). - Micro:bits y baterías (si se usarán). - Diapositivas de la clase listas. - Chat de "Agente Gnius" abierto y funcionando.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(No hay diálogo en esta actividad, es una revisión interna del profesor)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>Crear un ambiente acogedor, establecer el tono de la clase "Misión Gnius", recordar a la IA el perfil de cada alumno y activar la IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Saludo de I.A. con todos ⏰ 0.5 minutos</h3>
+                            <p>Proyectar diapositiva 2. Saludar a los alumnos y dar la instrucción de recordar su perfil a la IA y saludarla.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, Genios! 👋 ¡Bienvenidos a la Misión número 5! Antes de comenzar, activaremos a Gnius Copilot. Primero, escriban en el chat su perfil: piloto, comunicador, ingeniero, científico, navegador o biólogo. ¡Luego, usen el saludo de desafío! Escriban: <strong>'¡Gnius Copilot, acepto el desafío de la misión 5! Soy un [Su perfil] y estoy preparado.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Saludo de I.A. con todos ⏰ 2.5 minutos</h3>
+                            <p>Recibir el saludo de la IA.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Genios, veo que están aceptando el desafío! Asegúrense de que todos hayan escrito su perfil y el mensaje de activación. Si Gnius Copilot no les ha respondido, ¡avísenme!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 5 minutos</h2>
+                <p>Presentar el objetivo de la clase (dominio de bloques) y mostrar un proyecto de ejemplo creado por el profesor.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: I Can Statement + Ejemplificación ⏰ 0.5 minutos</h3>
+                            <p>Proyectar diapositiva 3. Presentar el "I Can Statement" y el proyecto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Genios, al final de esta misión, podrán decir: <strong>'Yo puedo usar los bloques de temperatura, nivel de luz y si... entonces... sino para crear mis propios proyectos con Micro:bit!'</strong><br> Para que vean lo que se puede hacer con estos bloques, ¡les voy a mostrar un proyecto que yo mismo creé: una mini estación meteorológica!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Descripción General ⏰ 1 minuto</h3>
+                            <p>Describir brevemente cómo funciona la mini estación meteorológica (desde la perspectiva del profesor/usuario).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Miren, esta mini estación meteorológica la programé para que me muestre el clima de una forma divertida. Puedo configurarla para que use la temperatura o la luz. Si la pongo en modo temperatura, me muestra un sol si hace calor, una nube si está templado y un copo de nieve si hace frío. ¡Y si la pongo en modo luz, me muestra un sol si hay mucha luz y una luna si hay poca luz!</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Desglose (Sensores) ⏰ 1 minuto</h3>
+                            <p>Explicar cómo la Micro:bit "siente" la temperatura y la luz (desde la perspectiva del profesor/usuario).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Esta Micro:bit es muy lista. Tiene sensores que le permiten <strong>'sentir'</strong> la temperatura y la luz. Es como si tuviera un termómetro y un ojo integrados.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Desglose (Condiciones) ⏰ 1 minuto</h3>
+                            <p>Explicar cómo la Micro:bit decide qué ícono mostrar (desde la perspectiva del profesor/usuario).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Yo programé la Micro:bit para que, dependiendo de lo que <strong>'sientan'</strong> sus sensores, muestre un ícono diferente. Es como si le hubiera enseñado a tomar decisiones. Por ejemplo, si el sensor de temperatura detecta que hace calor, la Micro:bit sabe que tiene que mostrar el sol.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Desglose (Si... entonces... sino) ⏰ 1.5 minutos</h3>
+                            <p>Mencionar la estructura "si... entonces... sino" como la forma en que se programan las decisiones (sin entrar en detalles de código, desde la perspectiva del profesor).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para lograr que la Micro:bit tome estas decisiones, usé una herramienta de programación que se llama <strong>'si... entonces... sino'</strong>. Es una forma de decirle a la Micro:bit: <strong>'Si ocurre esta condición, entonces haz esto; si no, haz esto otro'</strong>. ¡Ustedes aprenderán a usar esta herramienta para crear sus propios proyectos!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 4 minutos</h2>
+                <p>Activar la interacción con Gnius Copilot y motivar a los alumnos a recibir información personalizada.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: AI GYM ⏰ 1 minuto</h3>
+                            <p>Proyectar diapositiva 8. Introducción a AI GYM.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Genios, prepárense para una descarga de conocimiento directamente a sus cerebros! 🧠⚡️ Gnius Copilot está listo para compartir información ultra secreta sobre los bloques de temperatura, nivel de luz y <strong>'si... entonces... sino'</strong>. Escriban en el chat: <strong>'¡Gnius Copilot, transfiereme el conocimiento!'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: AI GYM ⏰ 3 minutos</h3>
+                            <p>Interacción con la IA y preguntas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Mientras los alumnos interactúan con la IA) ¡Excelente! Están recibiendo información de Gnius Copilot. Recuerden que, si quieren profundizar en algún tema, o si algo no les queda claro, pueden hacerle preguntas específicas. <br>
+                                    Por ejemplo:<br>
+                                    <strong>* '¿Qué es el bloque temperatura y para qué sirve?'</strong><br>
+                                    <strong>* '¿Qué es el bloque nivel de luz y cómo funciona?'</strong><br>
+                                    <strong>* 'Explícame qué es si... entonces... sino.'</strong><br>
+                                    <strong>* '¿Cómo puedo usar si...entonces...sino con los bloques de temperatura o nivel de luz?'</strong><br>
+                                    ¡Gnius Copilot está aquí para ayudarles!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark A ⏰ 18 minutos</h2>
+                <p>Proceso de diseño y programación de un proyecto propio con Micro:bit.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Brain Spark A ⏰ 0.5 minutos</h3>
+                            <p>Proyectar diapositiva 9. Pregunta activadora.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Genios, es hora de un desafío relámpago! ⚡️ Piensen:<br>
+                                <strong>¿Qué proyecto realizarán o van a crear, usando los sensores de temperatura, luz y la estructura 'si... entonces... sino', podrían crear con la Micro:bit?</strong> 🤔 ¡Cualquier idea es válida!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Brain Spark A ⏰ 1 minuto</h3>
+                            <p>Proyectar diapositiva 10. Exploración de ideas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">
+                                    Tienen 1 minuto para pensar en ideas.<br>
+                                    <strong>* ¿Ya tienen una? ¡Perfecto!</strong><br>
+                                    <strong>* ¿No se les ocurre nada? ¡Gnius Copilot al rescate!</strong><br>
+                                    <strong>* ¿Quieren aplicar esto a otra clase? ¡Pregúntenle a Gnius Copilot!</strong><br>
+                                    Por ejemplo: <strong>'¿Qué proyecto puedo hacer con Micro:bit que use temperatura/luz para [tema de otra clase]?'</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Brain Spark A ⏰ 5 minutos</h3>
+                            <p>Proyectar diapositiva 11. Instrucción para pedir pseudocódigo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Ahora, la parte crucial! Tienen 5 minutos para describir su idea a Gnius Copilot y pedirle que les genere un pseudocódigo. Sean muy específicos sobre lo que quieren que haga su proyecto. Cuanto más claros sean, mejor será el pseudocódigo. ¡Recuerden que el pseudocódigo es como el esqueleto de su programa!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Brain Spark A ⏰ 11 minutos</h3>
+                            <p>Proyectar diapositiva 12. Tiempo de implementación, preguntas guía y recordatorio de la Micro:bit.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Y ahora, a programar! Tienen 11 minutos para convertir ese pseudocódigo en bloques de MakeCode.<br>
+                                    <strong>* Prueben en el simulador.</strong><br>
+                                    <strong>* Si algo no funciona, ¡pregunten a Gnius Copilot!</strong><br>
+                                    <strong>* Iteren, ¡programar se trata de eso!</strong><br>
+                                    Cuando su programa funcione en el simulador, ¡pasen por su Micro:bit , conéctenla y descarguen el código! Recuerden que en la siguiente actividad ¡compartirán sus proyectos!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Brain Spark A ⏰ 0.5 minutos</h3>
+                            <p>Explicar brevemente Gnius Storm.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Genios, es hora de guardar sus trabajos! ¡Prepárense porque en la próxima actividad compartirán sus proyectos con sus compañeros!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Compartir proyectos, recibir retroalimentación y reflexionar.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 0.5 minutos</h3>
+                            <p>Proyectar diapositiva 13. Instrucción para la reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     ¡Genios, antes de compartir sus proyectos, tómense un momento para pensar en su propio trabajo! Reflexionen:<br>
+                                    <strong>¿Qué crearon?</strong><br>
+                                    <strong>¿Cómo funciona?</strong><br>
+                                    <strong>¿Están contentos con el resultado?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Pair - Parejas) ⏰ 2 minutos</h3>
+                            <p>Proyectar diapositiva 14. Instrucciones para el intercambio.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Ahora, júntense en parejas! Intercambien sus Micro:bits. Cada uno mostrará su proyecto a su compañero y le explicará cómo funciona. ¡El compañero lo probará! Mientras lo prueban, el creador puede responder estas preguntas:<br>
+                                    <strong>* '¿Qué hace mi proyecto?'</strong><br>
+                                    <strong>* '¿Cómo funciona?'</strong><br>
+                                    <strong>* '¿Para qué podría servir?'</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Share - Retroalimentación) ⏰ 1.5 minutos</h3>
+                            <p>Proyectar diapositiva 15. Instrucciones para la retroalimentación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Es hora de la retroalimentación! Sean honestos, pero amables. Después de probar el proyecto de su compañero, díganle:<br>
+                                   <strong>* '¿Qué te gustó de su proyecto?'</strong><br>
+                                   <strong>* '¿Qué crees que podría mejorar?'</strong><br>
+                                   <strong>* '¿Se te ocurre alguna otra idea para usar los bloques que aprendió?'</strong><br>
+                                    ¡Ayúdense mutuamente a crear proyectos aún más geniales!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Gnius STORM (Reflexión Final) ⏰ 0.5 minutos</h3>
+                            <p>Proyectar diapositiva 16. Instrucción para la reflexión final.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Excelente trabajo, Genios! Ahora, tómense un último momento para reflexionar:<br>
+                                    <strong>* '¿Qué aprendieron al compartir su proyecto?'</strong><br>
+                                    <strong>* '¿Qué ideas nuevas obtuvieron de sus compañeros?'</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
